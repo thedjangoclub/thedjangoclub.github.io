@@ -4,16 +4,54 @@ title: The Django Club
 ---
 
 <div class="home" id="home">
-  <h1 class="pageTitle">Recent Posts</h1>
+  <div class="container">
+      <h2 class="text-center"> What is thedjangoclub ? </h2><br>
+    
+      This site contains tutorials and solutions to most common competitive programming questions and also web development using Django.
+      Every day new post about a problem will be updated.Solutions are given as python snippets.
+      
+      <h2 class="text-center"> Why thedjangoclub ? </h2><br>
+
+      You want to learn something and you want to do something with your life . 
+
+      
+    <h2> why python? </h2>
+    <ul>
+      <li>Python is the most powerful programming language of 21st century.</li>
+      <li>Using python you can develop all applications like</li>
+      <li> web applications using Django,Flask,and Pyramid</li>
+      <li>mobile applications using kivy</li>
+      <li>Desktop applications using tkinter</li>
+      <li>extensively used in data analysis, machine learning ,deep learning and also in cyber security </li>
+    </ul>
+</div>
+
+<h1 class="pageTitle">Recent Posts in Django</h1>
   <ul class="posts noList">
     {% for post in paginator.posts %}
+      {% if post.category contains 'django' %}
       <li>
         <span class="date">{{ post.date | date: '%B %d, %Y' }}</span>
         <h3><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
         <p>{% if post.description %}{{ post.description }}{% else %}{{ post.excerpt | strip_html }}{% endif %}</p>
       </li>
+      {% endif %}
     {% endfor %}
-  </ul>
+    </ul><br>
+
+<h1 class="pageTitle">Recent Posts in Problems</h1>
+  <ul class="posts noList">
+      {% for post in paginator.posts %}
+        {% if post.category contains 'problems' %}
+        <li>
+          <span class="date">{{ post.date | date: '%B %d, %Y' }}</span>
+          <h3><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+          <p>{% if post.description %}{{ post.description }}{% else %}{{ post.excerpt | strip_html }}{% endif %}</p>
+        </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+
   <!-- Pagination links -->
   <div class="pagination">
     {% if paginator.previous_page %}
