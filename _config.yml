@@ -14,10 +14,12 @@ paginate: 5
 navigation:
   - title: Home
     url: /index.html
-  - title: problems 
+  - title: Problems 
     url: /problems
   - title: Django
     url: /django
+  - title: Open Source Tech
+    url: /opentech
     
  
 
@@ -25,4 +27,4 @@ social:
   github: thedjangoclub
   email: syedjafer1997@gmail.com
 
-google_analytics: "UA-100880115-1"
+google_analytics: ""
