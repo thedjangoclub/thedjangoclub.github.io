@@ -1,4 +1,4 @@
-# thedjangoclub.github.io
+# thedjangoclub 
 
   This site contains tutorials and solutions to most common competitive programming questions and also web development using Django.
   Every day new post about a problem will be updated.Solutions are 
