@@ -1,0 +1,28 @@
+title: theDjangoClub
+description: This site contains tutorials and solutions to most common competitive programming questions and also web development using Django. Every day new post about a problem will be updated. Solutions are given as python snippets.
+
+url: https://github.com/thedjangoclub
+baseurl: ""
+paginate_path: "blog/page:num/"
+permalink: blog/:title/
+
+markdown: kramdown
+highlighter: rouge
+plugins: [jekyll-paginate]
+paginate: 5
+
+navigation:
+  - title: Home
+    url: /index.html
+  - title: problems 
+    url: /problems
+  - title: Django
+    url: /django
+    
+ 
+
+social:
+  github: thedjangoclub
+  email: syedjafer1997@gmail.com
+
+google_analytics: ""
