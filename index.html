@@ -33,10 +33,12 @@ title: The Django Club
       <li>
         <span class="date">{{ post.date | date: '%B %d, %Y' }}</span>
         <h3><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
-
+        
+        {% if post.category %}
         <div id="tags">
           {{ post.category }}
         </div>
+        {% endif %}
 
         <p>{% if post.description %}{{ post.description }}{% else %}{{ post.excerpt | strip_html }}{% endif %}</p>
       </li>
