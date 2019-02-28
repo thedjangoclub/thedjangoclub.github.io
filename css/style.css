@@ -1159,3 +1159,14 @@ CONTACT PAGE STYLING
     width: 48%;
     float: right;
     margin-right: 0; } }
+
+
+#tags{
+  padding: 5px 5px 5px 5px;
+  margin: 5px 5px 5px 5px;
+  background-color: rgb(19, 110, 46);
+  color :white;
+  text-align: center;
+  border: solid ;
+
+}
