@@ -105,7 +105,7 @@ Blogs you might refer :
 | Topal | [Python Best Practices and Tips by Toptal Developers][topal-link]      | 
 
 
-[total-link] : https://www.toptal.com/python/tips-and-practices
+[total-link]: https://www.toptal.com/python/tips-and-practices
 [pep-8]: https://realpython.com/python-pep8/
-[pep-link] : https://www.python.org/dev/peps/pep-0008/
-[pdotenv] : https://github.com/theskumar/python-dotenv
+[pep-link]: https://www.python.org/dev/peps/pep-0008/
+[pdotenv]: https://github.com/theskumar/python-dotenv
