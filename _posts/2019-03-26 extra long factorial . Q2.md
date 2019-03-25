@@ -35,6 +35,7 @@ number = int(input())
 print (fact(number))
 ```
 
+
 ### JAVA :
 ```java
 import java.util.*;
